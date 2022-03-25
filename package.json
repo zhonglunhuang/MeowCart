@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "@parcel/transformer-sass": "2.0.0-beta.2",
-    "parcel": "^2.0.0-beta.2"
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
   },
   "dependencies": {
     "bootstrap": "^4.6.0"
