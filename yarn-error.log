@@ -1,0 +1,43 @@
+Arguments: 
+  /home/jon/.nvm/versions/node/v17.8.0/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/jon/.rvm/gems/ruby-2.7.5/bin:/home/jon/.rvm/gems/ruby-2.7.5@global/bin:/home/jon/.rvm/rubies/ruby-2.7.5/bin:/home/jon/.nvm/versions/node/v17.8.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2022.8.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python37-32/Scripts/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python37-32/:/mnt/c/Ruby31-x64/bin:/mnt/c/Users/user/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/user/AppData/Roaming/npm:/snap/bin:/home/jon/.rvm/bin:/home/jon/.rvm/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  17.8.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ECONNREFUSED 2606:4700::6810:1a23:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+
+npm manifest: 
+  {
+    "name": "shopping_cart",
+    "version": "2.0.0",
+    "license": "MIT",
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "build": "parcel build src/index.html"
+    },
+    "devDependencies": {
+      "@fortawesome/fontawesome-free": "^5.15.3",
+      "@parcel/transformer-sass": "^2.4.0",
+      "parcel": "^2.4.0"
+    },
+    "dependencies": {
+      "bootstrap": "^4.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
