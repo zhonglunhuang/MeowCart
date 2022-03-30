@@ -1,9 +1,9 @@
-
-
-function updateList(itemList) {   //用於更新購物車金額
+function updateList(itemList) {
+    //用於更新購物車金額
     let tb = document.querySelector('tbody');
     let td = document.querySelectorAll('tbody > tr > td:first-child');
-    itemList.forEach((e) => {    //從商品資料陣列比對網頁的相同品項，並修正金額
+    itemList.forEach((e) => {
+        //從商品資料陣列比對網頁的相同品項，並修正金額
         td.forEach((x) => {
             if (x.textContent == e.title) {
                 x.parentElement.querySelector('td > input').value = e.quantity;
@@ -11,7 +11,7 @@ function updateList(itemList) {   //用於更新購物車金額
             }
         });
     });
-    let nowList = [];     //14~20行，為了找出諮商
+    let nowList = []; //14~20行，為了找出網頁現有的品項，並比對出資料庫有，網頁沒有的品項
     td.forEach((e) => {
         nowList.push(e.textContent);
     });
@@ -36,7 +36,7 @@ function updateList(itemList) {   //用於更新購物車金額
     total.forEach((e) => {
         totalCount = totalCount + Number(e.textContent.replace('$', ''));
     });
-    document.querySelector('tfoot > tr > td:nth-child(3)').textContent = `$${(totalCount).toFixed(2)}`;
+    document.querySelector('tfoot > tr > td:nth-child(3)').textContent = `$${totalCount.toFixed(2)}`;
 
     //變更數量
 }
